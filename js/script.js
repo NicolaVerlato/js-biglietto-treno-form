@@ -1,3 +1,4 @@
+// logica per comando 'genera'
 const generateButton = document.getElementById('ticket-generator');
 generateButton.addEventListener('click',
     function() {
@@ -28,6 +29,7 @@ generateButton.addEventListener('click',
     }
 )
 
+// logica per comando 'annulla'
 const deleteAction = document.getElementById('undo');
 deleteAction.addEventListener('click',
     function() {

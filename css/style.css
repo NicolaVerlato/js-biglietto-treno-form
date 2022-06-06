@@ -1,6 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* common */
+body{
+    background-color: #ba1450;
+}
+h2{
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* user form */
+.user-form{
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+}
+.dati-utente{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    text-align: center;
+}
+.form-item input, 
+.form-item select{
+    display: block;
+}
+.form-item .style-space{
+    color: #ba1450;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.buttons .form-item{
+    padding: 20px;
+}
+.form-item button{
+    padding: 5px;
+    background: lightgray;
+    color: #ba1450;
+    border-radius: 5px;
+}
+
+/* ticket */
 #container{
     display: none;
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
 }
 #container.active{
     display: block;
+}
+.user-ticket{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    line-height: 40px;
+}
+#user-name-ticket{
+    background-color: grey;
+    padding: 10px;
+}
+.bold{
+    font-weight: 800;
+
 }

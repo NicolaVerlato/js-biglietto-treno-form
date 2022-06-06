@@ -9,7 +9,81 @@
 </head>
 <body>
     
+    <!-- form -->
+    <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
+    <div class="user-form">
+        <div class="form-item">
+            <label for="user-name">Nome Cognome</label>
+            <input type="text" id="user-name">
+        </div>
+
+        <div class="form-item">
+            <label for="user-km">Km da percorrere</label>
+            <input type="number" id="user-km">
+        </div>
+
+        <div class="form-item">
+            <label for="user-age">Fascia d'età</label>
+            <select id="user-age">
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="minorenne">Minorenne</option>
+                <option value="over">Over 65</option>
+            </select>
+        </div>
+
+        <div class="form-item">
+            <button id="ticket-generator">Genera</button>
+        </div>
+
+        <div class="form-item">
+            <button id="undo">Annulla</button>
+        </div> 
+    </div>
+
+    <!-- generazione biglietto -->
+    <h2>IL TUO BIGLIETTO</h2>
+
+    <div id="container">
+        <h4>DETTAGLIO PASSEGGERI</h4>
+
+        <div class="user-ticket">
+            <div id="user-name-ticket">
+                <div class="bold">
+                    NOME PASSEGGERO
+                </div>
+                <div id="ticket-name"></div>
+            </div>
+
+            <div id="offer">
+                <div class="bold">
+                    Offerta
+                </div>
+                <div id="ticket-offer"></div>
+            </div>
+
+            <div id="train-carriage">
+                <div class="bold">
+                    Carrozza
+                </div>
+                <div id="ticket-carriage"></div>
+            </div>
+
+            <div id="cp-code">
+                <div class="bold">
+                    Codice CP
+                </div>
+                <div id="ticket-code"></div>
+            </div>
+
+            <div id="ticket-price">
+                <div class="bold">
+                    Costo Biglietto
+                </div>
+                <div id="ticket-price"></div>
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="js/script.js"></script>
 </body>
